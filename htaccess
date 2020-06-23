@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_URI} !^public
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+# Use PHP71 as default
+AddHandler application/x-httpd-php71 .php
+# BEGIN custom php.ini PHP71
+<IfModule mod_suphp.c>
+    suPHP_ConfigPath /home4/lesan360/rainer.tridedesigns.com
+</IfModule>
+# END custom php.ini

@@ -1,0 +1,8 @@
+ul.show-question-options {
+    font-size: 16px;
+    list-style: circle;
+}
+
+ul.show-question-options li {
+    padding: 10px 0;
+}
